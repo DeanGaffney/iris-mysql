@@ -5,8 +5,14 @@ import simplejson as json
 from mysql.connector import errorcode
 import requests
 
-endpoint = 'http://ec2-52-16-53-220.eu-west-1.compute.amazonaws.com:8080/iris/schema/route/18'
 headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
+
+agentData = {'name': 'mysql_agent'}
+
+urlResp = requests.post('http://ec2-52-16-53-220.eu-west-1.compute.amazonaws.com:8080/iris/schema/getAgentUrl', data=json.dumps(agentData), headers=headers)
+
+endpoint = urlResp.json()['url']
+
 config = {
     'user': 'root',
     'password': 'iris',
