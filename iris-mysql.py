@@ -18,7 +18,7 @@ endpoint = urlResp.json()['url']
 config = {
     'user': 'root',
     'password': 'iris',
-    'host': '127.0.0.1',
+    'host': 'ec2-52-16-53-220.eu-west-1.compute.amazonaws.com',
     'database': 'iris'
 }
 
@@ -39,7 +39,7 @@ else:
     rv = cur.fetchall()
     for result in rv:
         resp = requests.post(endpoint, data=json.dumps(dict(zip(row_headers,result))), headers=headers)
-        print resp.json()
+        print(resp.json())
 finally:
     if cur:
         cur.close()
