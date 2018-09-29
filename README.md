@@ -14,7 +14,7 @@ The following is the schema that was created in Iris for the agent.
 
 ## Agent Dashboard
 The following image shows the dashboard for the agent inside Iris where it is keeping track of the Iris database memory.
-![Iris Dashboard](./images/iris-mysql-dashboard.jpeg)
+![Iris Dashboard](./images/iris-mysql-dashboard.PNG)
 
 ## Agent Transformation Rule
 This agent has no transformation rule, please see the [Node.js Agent](https://github.com/DeanGaffney/iris-node) for an example of a transformation rule.
