@@ -33,4 +33,4 @@ This agent has no transformation rule, please see the [Node.js Agent](https://gi
 
 * **Dean Gaffney**
 
-See also the list of [contributors](https://github.com/DeanGaffney/iris-selenium/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/DeanGaffney/iris-mysql/graphs/contributors) who participated in this project.
