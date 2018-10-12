@@ -1,0 +1,13 @@
+{
+    "database":{
+        "user": "<username>",
+        "password": "<password>",
+        "host": "<host address>",
+        "database": "<database name>"
+    },
+    "iris":{
+        "agent":{
+            "url": "<iris agent route url>"
+        }
+    }
+}

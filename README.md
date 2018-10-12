@@ -8,6 +8,9 @@
 
 This repository contains the MySQL agent for my final year project [Iris](https://github.com/DeanGaffney/iris). This agent uses a python script to get the memory usage of a specific database. The memory usage and database name is then sent to Iris where it is displayed on a chart in real time. This agent was deployed on the same EC2 instance as the Iris web application and was run every day using cron to keep track of Iris' database memory.
 
+## Running
+Rename the conf.template.json file to conf.json and fill out the missing details for your iris agent.
+
 ## Agent Schema
 The following is the schema that was created in Iris for the agent.
 ![Iris UI Schema](./images/iris-mysql-schema.PNG)
